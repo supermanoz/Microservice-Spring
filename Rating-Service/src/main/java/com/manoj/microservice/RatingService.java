@@ -40,7 +40,7 @@ public class RatingService {
     public User getUser(Integer userID){
         User user=webClientBuilder.build()
                 .get()
-                .uri("http://localhost:8082/users/fetch/"+userID)
+                .uri("http://user-app/users/fetch/"+userID)
                 .retrieve()
                 .bodyToMono(User.class)
                 .block();
@@ -50,7 +50,7 @@ public class RatingService {
     public Movie getMovie(String imdbID,String key){
         Movie movie=webClientBuilder.build()
                 .get()
-                .uri("http://localhost:8081/movies/fetch/"+imdbID)
+                .uri("http://movie-app/movies/fetch/"+imdbID)
                 .headers(header -> {
                     header.setContentType(MediaType.APPLICATION_JSON);
                     header.setAccept(Collections.singletonList(MediaType.APPLICATION_JSON));
