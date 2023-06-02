@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Microservice-Spring">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/Movie-Service.zip!/" />
+      <root url="jar://$PROJECT_DIR$/Discovery-Service.zip!/" />
+      <root url="jar://$PROJECT_DIR$/Rating-Service.zip!/" />
+      <root url="jar://$PROJECT_DIR$/User-Service.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
